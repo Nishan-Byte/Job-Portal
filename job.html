@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings - JobFinder</title>
+    <link rel="stylesheet" href="css/job.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">JobFinder</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job.html">Jobs</a></li>
+            <li><a href="employer.html">Employers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Job Search Section -->
+    <section class="job-search">
+        <h1>Find Your Dream Job</h1>
+        <form class="search-form">
+            <input type="text" placeholder="Job title or keywords" required>
+            <select required>
+                <option value="" disabled selected>Location</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="san-francisco">San Francisco</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+        <h2>Job Openings</h2>
+        <div class="filter">
+            <h3>Filter By:</h3>
+            <select>
+                <option value="" disabled selected>Job Type</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="contract">Contract</option>
+                <option value="internship">Internship</option>
+            </select>
+        </div>
+
+        <div class="job-card">
+            <h3>Software Engineer</h3>
+            <p>Location: New York, NY</p>
+            <p>Type: Full-Time</p>
+            <p>Description: Develop and maintain software applications.</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Marketing Manager</h3>
+            <p>Location: San Francisco, CA</p>
+            <p>Type: Part-Time</p>
+            <p>Description: Manage marketing campaigns and strategies.</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Data Analyst</h3>
+            <p>Location: Chicago, IL</p>
+            <p>Type: Contract</p>
+            <p>Description: Analyze data to provide insights for business decisions.</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Web Developer Intern</h3>
+            <p>Location: Los Angeles, CA</p>
+            <p>Type: Internship</p>
+            <p>Description: Assist in developing web applications.</p>
+            <button>Apply Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 JobFinder. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
